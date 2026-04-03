@@ -67,21 +67,21 @@
           <h2 class="card-title">Quick Access</h2>
         </div>
         <div class="quick-links" id="quick-links">
-          <a href="https://docs.google.com/spreadsheets" target="_blank" class="ql-btn searchable" data-label="Google Sheets Problem List Problems">
+          <a href="https://docs.google.com/spreadsheets/d/1dMOurk0l4fCAyvxvlGqbF_tsMkGWcF6j3pECqYrF3PM/edit?usp=sharing" target="_blank" class="ql-btn searchable" data-label="Google Sheets Problem List Problems">
             <span class="ql-icon">📊</span>
             <span class="ql-text">
               <span class="ql-name">Problem Sheet</span>
               <span class="ql-sub">Google Sheets</span>
             </span>
           </a>
-          <a href="https://notion.so" target="_blank" class="ql-btn searchable" data-label="Notion Notes Pages">
+          <a href="https://www.notion.so/KU-CSE-26-30e68109f431802e80fbc0253fc86e2d?source=copy_link" target="_blank" class="ql-btn searchable" data-label="Notion Notes Pages">
             <span class="ql-icon">📝</span>
             <span class="ql-text">
               <span class="ql-name">Notion</span>
               <span class="ql-sub">Notes &amp; Pages</span>
             </span>
           </a>
-          <a href="https://drive.google.com" target="_blank" class="ql-btn searchable" data-label="Google Drive Books Resources">
+          <a href="https://drive.google.com/drive/folders/1DnV-P0DIJ9Qaq0xM-axRHqG9EhkzOBW_?usp=sharing" target="_blank" class="ql-btn searchable" data-label="Google Drive Books Resources">
             <span class="ql-icon">📚</span>
             <span class="ql-text">
               <span class="ql-name">Drive Books</span>
@@ -99,128 +99,110 @@
       </section>
 
       <!-- === B. CODING SECTION === -->
-      <section class="card coding-card focus-keep" data-section="coding">
-        <div class="card-header">
-          <span class="card-icon">⌨</span>
-          <h2 class="card-title">Coding</h2>
+      <!-- Code Snippets -->
+      <div class="sub-label" style="margin-top:1.4rem;">Code Snippets</div>
+      <div class="snippets" id="snippets">
+
+        <!-- C Basic -->
+        <div class="snippet-card searchable" data-label="C Basic Template">
+          <div class="snippet-header">
+            <div class="snippet-meta">
+              <span class="snippet-lang">C</span>
+              <span class="snippet-name">Basic Template</span>
+            </div>
+            <button class="copy-btn" data-target="snip-c-basic">Copy</button>
+          </div>
+          <pre id="snip-c-basic" class="snippet-code">#include &lt;stdio.h&gt;
+
+      int main () {
+
+          return 0;
+      }</pre>
         </div>
 
-        <div class="sub-label">Online Compilers</div>
-        <div class="compiler-links" id="compiler-links">
-          <a href="https://replit.com" target="_blank" class="compiler-btn searchable focus-keep" data-label="Replit Online Compiler IDE">
-            <span class="cl-dot"></span>Replit
-          </a>
-          <a href="https://www.onlinegdb.com" target="_blank" class="compiler-btn searchable focus-keep" data-label="OnlineGDB Compiler Debugger">
-            <span class="cl-dot"></span>OnlineGDB
-          </a>
-          <a href="https://godbolt.org" target="_blank" class="compiler-btn searchable focus-keep" data-label="Godbolt Compiler Explorer Assembly">
-            <span class="cl-dot"></span>Godbolt
-          </a>
-          <a href="https://codeforces.com" target="_blank" class="compiler-btn searchable focus-keep" data-label="Codeforces Competitive Programming">
-            <span class="cl-dot"></span>Codeforces
-          </a>
+        <!-- C++ Base -->
+        <div class="snippet-card searchable" data-label="C++ Base Template">
+          <div class="snippet-header">
+            <div class="snippet-meta">
+              <span class="snippet-lang">C++</span>
+              <span class="snippet-name">Base Template</span>
+            </div>
+            <button class="copy-btn" data-target="snip-cpp-base">Copy</button>
+          </div>
+          <pre id="snip-cpp-base" class="snippet-code">#include &lt;iostream&gt;
+      #include &lt;vector&gt;
+      #include &lt;algorithm&gt;
+      #include &lt;cmath&gt;
+      using namespace std;
+
+      using vint = vector&lt;int&gt;;
+      using vllint = vector&lt;long long int&gt;;
+      using vchar = vector&lt;char&gt;;
+      using vstring = vector&lt;string&gt;;
+
+      #define pb push_back
+      #define endn '\n'
+      #define all(x) (x).begin(), (x).end()
+
+      void fastIO() {
+          ios_base::sync_with_stdio(false);
+          cin.tie(nullptr);
+      }
+
+      int main() {
+          fastIO();
+
+          
+
+          return 0;
+      }</pre>
         </div>
 
-        <!-- Code Snippets -->
-        <div class="sub-label" style="margin-top:1.4rem;">Code Snippets</div>
-        <div class="snippets" id="snippets">
-
-          <div class="snippet-card searchable" data-label="Binary Search Template Algorithm">
-            <div class="snippet-header">
-              <div class="snippet-meta">
-                <span class="snippet-lang">C++</span>
-                <span class="snippet-name">Binary Search</span>
-              </div>
-              <button class="copy-btn" data-target="snip-bsearch">Copy</button>
+        <!-- Contest Template -->
+        <div class="snippet-card searchable" data-label="C++ Contest Template Multiple Test Cases">
+          <div class="snippet-header">
+            <div class="snippet-meta">
+              <span class="snippet-lang">C++</span>
+              <span class="snippet-name">Contest Template</span>
             </div>
-            <pre id="snip-bsearch" class="snippet-code">int lo = 0, hi = n - 1;
-while (lo &lt;= hi) {
-  int mid = lo + (hi - lo) / 2;
-  if (arr[mid] == target) return mid;
-  else if (arr[mid] &lt; target) lo = mid + 1;
-  else hi = mid - 1;
-}
-return -1; // not found</pre>
+            <button class="copy-btn" data-target="snip-contest">Copy</button>
           </div>
+          <pre id="snip-contest" class="snippet-code">#include &lt;iostream&gt;
+      #include &lt;vector&gt;
+      #include &lt;algorithm&gt;
+      #include &lt;cmath&gt;
+      using namespace std;
 
-          <div class="snippet-card searchable" data-label="BFS Breadth First Search Graph Template">
-            <div class="snippet-header">
-              <div class="snippet-meta">
-                <span class="snippet-lang">C++</span>
-                <span class="snippet-name">BFS</span>
-              </div>
-              <button class="copy-btn" data-target="snip-bfs">Copy</button>
-            </div>
-            <pre id="snip-bfs" class="snippet-code">queue&lt;int&gt; q;
-vector&lt;bool&gt; vis(n, false);
-q.push(src); vis[src] = true;
-while (!q.empty()) {
-  int u = q.front(); q.pop();
-  for (int v : adj[u]) {
-    if (!vis[v]) { vis[v] = true; q.push(v); }
-  }
-}</pre>
-          </div>
+      using vint = vector&lt;int&gt;;
+      using vllint = vector&lt;long long int&gt;;
+      using vchar = vector&lt;char&gt;;
+      using vstring = vector&lt;string&gt;;
 
-          <div class="snippet-card searchable" data-label="Sieve Eratosthenes Prime Numbers">
-            <div class="snippet-header">
-              <div class="snippet-meta">
-                <span class="snippet-lang">C++</span>
-                <span class="snippet-name">Sieve of Eratosthenes</span>
-              </div>
-              <button class="copy-btn" data-target="snip-sieve">Copy</button>
-            </div>
-            <pre id="snip-sieve" class="snippet-code">vector&lt;bool&gt; sieve(int n) {
-  vector&lt;bool&gt; is_prime(n+1, true);
-  is_prime[0] = is_prime[1] = false;
-  for (int i = 2; i*i &lt;= n; i++)
-    if (is_prime[i])
-      for (int j = i*i; j &lt;= n; j += i)
-        is_prime[j] = false;
-  return is_prime;
-}</pre>
-          </div>
+      #define endn '\n'
+      #define pb push_back
+      #define all(x) (x).begin(), (x).end()
 
-          <div class="snippet-card searchable" data-label="Fast IO Boilerplate C++ Competitive Programming">
-            <div class="snippet-header">
-              <div class="snippet-meta">
-                <span class="snippet-lang">C++</span>
-                <span class="snippet-name">Fast I/O Boilerplate</span>
-              </div>
-              <button class="copy-btn" data-target="snip-fastio">Copy</button>
-            </div>
-            <pre id="snip-fastio" class="snippet-code">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-#define ll long long
-#define vi vector&lt;int&gt;
-#define pii pair&lt;int,int&gt;
+      void code() {
 
-int main() {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  // your code here
-  return 0;
-}</pre>
-          </div>
 
-          <div class="snippet-card searchable" data-label="DFS Depth First Search Graph Template">
-            <div class="snippet-header">
-              <div class="snippet-meta">
-                <span class="snippet-lang">C++</span>
-                <span class="snippet-name">DFS</span>
-              </div>
-              <button class="copy-btn" data-target="snip-dfs">Copy</button>
-            </div>
-            <pre id="snip-dfs" class="snippet-code">vector&lt;bool&gt; vis(n, false);
-void dfs(int u) {
-  vis[u] = true;
-  for (int v : adj[u])
-    if (!vis[v]) dfs(v);
-}</pre>
-          </div>
 
+      }
+
+      int main() {
+          ios_base::sync_with_stdio(false);
+          cin.tie(NULL);
+
+          int t; 
+          cin >> t;
+          while (t--) {
+              code();
+          }
+          
+          return 0;
+      }</pre>
         </div>
-      </section>
+
+      </div>
 
       <!-- === C. TOOLS SECTION === -->
       <section class="card tools-card" data-section="tools">
