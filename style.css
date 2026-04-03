@@ -540,7 +540,7 @@ a { text-decoration: none; color: inherit; }
   color: var(--text-dim);
   
   /* --- ADD THESE LINES --- */
-  max-height: 250px;    /* Limits the height of the code box */
+  max-height: 50px;    /* Limits the height of the code box */
   overflow-y: auto;     /* Enables vertical scrolling */
   overflow-x: auto;     /* Enables horizontal scrolling for long lines */
   white-space: pre;     /* Keeps your code formatting intact */
